@@ -1,4 +1,4 @@
-# SDP_AV_Existance
+# SDP_AV_Existence
 
 This JS Script is meant to be a condition criteria
 
