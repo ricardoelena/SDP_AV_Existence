@@ -9,7 +9,8 @@ try{
   	for (var i = 0; i < AVJason.length; i++){
        var av = AVJason[i];
        
-       if( av["Name"] != "No av detected." )return true;   
+       //if( av["Name"] != "No av detected." )return true;   
+       if( (av["Name"] != "No av detected.") && ( av["RealTimeProtectionStatus"] = "ON"))return true;  
      }
   	 console.log("required state <> " + state);
   	 return false;
