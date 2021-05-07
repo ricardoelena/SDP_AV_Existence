@@ -10,7 +10,7 @@ try{
        var av = AVJason[i];
        
        //if( av["Name"] != "No av detected." )return true;   
-       if( (av["Name"] != "No av detected.") && ( av["RealTimeProtectionStatus"] = "ON"))return true;  
+       if( av["Name"] != "No av detected." && av["RealTimeProtectionStatus"] == "ON")return true;  
      }
   	 console.log("required state <> " + state);
   	 return false;
